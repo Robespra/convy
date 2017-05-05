@@ -1,5 +1,43 @@
 
-
+.padding10_both {
+	padding: 10% 0;
+}
+.padding5_both {
+	padding: 5% 0;
+}
+.padding10_top {
+	padding-top: 10%;
+}
+.padding5_top {
+	padding-top: 5%;
+}
+.padding10_bottom {
+	padding-bottom: 10%;
+}
+.padding5_bottom {
+	padding-bottom: 5%;
+}
+.margin10_both {
+	margin: 10% 0;
+}
+.margin5_both {
+	margin: 5% 0;
+}
+.margin20_top {
+	margin-top: 20%;
+}
+.margin10_top {
+	margin-top: 10%;
+}
+.margin5_top {
+	margin-top: 5%;
+}
+.margin10_bottom {
+	margin-bottom: 10%;
+}
+.margin5_bottom {
+	margin-bottom: 5%;
+}
 
 .icon-svg {
   display: inline-block;
@@ -18,6 +56,11 @@
 .topbar-responsive {
   background: none;
   height: 100px;
+  width: 100%;
+}
+
+.top-bar-right {
+	padding-top: 1%;
 }
 
 .topbar-responsive .topbar-responsive-logo {
@@ -110,7 +153,7 @@
     text-align: center;}
 
 
-.convy_hero_inner h2{color:#fff;font-weight:normal;text-align:center;font-size:3.5em;overflow:visible;}
+.convy_hero_inner h2{color:#fff;font-weight:normal;text-align:center;font-size:4em;overflow:visible;}
 .cta_box {z-index: 3;background-color:#00D3E1;overflow:hidden;height:350px;margin-top: -250px;}
 
 .convy_cta{
@@ -131,6 +174,7 @@
   border-bottom: 1px solid #321c52;
   font-weight: 400;
   background-color: transparent;
+  border-radius: 0px;
 }
 
 .login-box-input:focus {
@@ -201,9 +245,15 @@
 .convy_sectors {
 	position: relative;
 }
+.convy_sectors label{
+	font-size: 1.5rem;
+}
+    
 
 .convy_hdiw {
+	background-color:#efde00;
 	position: relative;
+	color: #321c52;
 }
 
 .convy_pricing {
@@ -227,8 +277,8 @@
 }
 
 .pricing-table .title {
-  background-color: #0a0a0a;
-  color: #fefefe;
+  background-color: #321c52;
+  color: #ffffff;
   border-bottom: 0;
 }
 
@@ -239,7 +289,7 @@
 }
 
 .pricing-table .description {
-  color: #8a8a8a;
+  color: #321c52;
   font-size: 80%;
 }
 
@@ -342,11 +392,37 @@
   width: 100%;
 }
 
+
+
+
+.index_twitter_bg_setup{
+    position: relative;
+    height: 400px;
+    overflow: visible;
+    margin-bottom: 20%;
+}
+.index_twitter_bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00dde0;
+  transform: skewY(-3deg);
+  transform-origin: top left;
+  z-index: -9999;
+}
+
+
+
+
 @charset "UTF-8";
 
 .contact-panel-button {
-  background: #0a0a0a;
-  color: #fefefe;
+  background: #321c52;
+  color: #ffffff;
   width: auto;
   padding: 0.25rem 1.25rem;
   text-align: center;
@@ -362,8 +438,7 @@
 }
 
 .contact-panel-button:hover {
-  background: #242424;
-  color: #f0f0f0;
+  opacity: 0.8;
 }
 
 .is-active .contact-panel-button:after {
@@ -372,8 +447,8 @@
 
 .contact-panel {
   padding: 1rem;
-  z-index: 1;
-  background: #0a0a0a;
+  z-index: 9999;
+  background: #321c52;
   width: 350px;
   height: 375px;
   position: fixed;
@@ -383,22 +458,22 @@
 }
 
 .contact-panel label {
-  color: #fefefe;
+  color: #ffffff;
   width: 100%;
 }
 
 .contact-panel input[type="text"],
 .contact-panel input[type="email"],
 .contact-panel textarea {
-  background: #303030;
-  border: #0a0a0a;
+  background: #321c52;
+  border: #ffffff;
   transition: background 0.3s ease-in-out;
 }
 
 .contact-panel input[type="text"]:focus,
 .contact-panel input[type="email"]:focus,
 .contact-panel textarea:focus {
-  background: #fefefe;
+  background: #321c52;
 }
 
 .contact-panel .contact-panel-actions {
@@ -420,7 +495,7 @@
 .contact-panel .cancel-button {
   margin-bottom: 0;
   padding: 0.75rem 1rem;
-  color: #fefefe;
+  color: #ffffff;
   transition: background 0.25s ease-in-out;
 }
 
@@ -447,13 +522,14 @@
 
 
 .marketing-site-footer {
-  background: #2c3840;
+  background: #ffffff;
   color: #8aa0ae;
   padding: 2rem 0 0;
+  border-top: 3px solid #321c52;
 }
 
 .marketing-site-footer .marketing-site-footer-menu-social a {
-  color: #fefefe;
+  color: #321c52;
 }
 
 .marketing-site-footer .column-block {
@@ -471,13 +547,13 @@
 }
 
 .marketing-site-footer-name {
-  color: #fefefe;
+  color: #321c52;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
 .marketing-site-footer-title {
-  color: #fefefe;
+  color: #321c52;
   margin-bottom: 1rem;
   font-size: 1.25rem;
 }
@@ -491,7 +567,7 @@
 
 .marketing-site-footer-block .fa {
   font-size: 2rem;
-  color: #020304;
+  color: #321c52;
 }
 
 .marketing-site-footer-block p {
@@ -500,7 +576,7 @@
 }
 
 .marketing-site-footer-bottom {
-  background: #020304;
+  background: #321c52;
   padding: 1rem 0;
 }
 
@@ -516,7 +592,7 @@
 }
 
 .marketing-site-footer-bottom .marketing-site-footer-bottom-links a {
-  color: #8aa0ae;
+  color: #fff;
 }
 
 @media screen and (max-width: 63.9375em) {
