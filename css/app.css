@@ -1,4 +1,8 @@
 
+.clear {
+  clear: both;
+}
+
 .padding10_both {
 	padding: 10% 0;
 }
