@@ -430,6 +430,69 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efde00', end
 }
 
 
+.switch-field {
+    overflow: hidden;
+}
+
+
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+  float: left;
+}
+
+.switch-field label {
+  display: inline-block;
+  width: 20%;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 6px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition:    all 0.1s ease-in-out;
+  -ms-transition:     all 0.1s ease-in-out;
+  -o-transition:      all 0.1s ease-in-out;
+  transition:         all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  border: 2px solid #321c52;
+  color: #321c52;
+  font-weight: bold;
+}
+
+
+.switch-field label svg{
+  stroke: #321c52;
+  fill: #321c52;
+}
+
+
+.switch-field input:checked label svg{
+  stroke: #fff;
+  fill: #fff;
+}
+
+
+
+
 
 
 .convy_footer {
