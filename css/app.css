@@ -191,7 +191,7 @@ textarea.login-box-input {
   height: 3.1rem;
   border: 0;
   padding-left: 0;
-  padding-bottom: 0.7em;
+  padding-bottom: 0.1em;
   box-shadow: none;
   font-weight: 400;
   background-color: transparent;
@@ -228,12 +228,12 @@ textarea.login-box-input:focus + label {
 
 input.login-box-input:focus,
 input.login-box-input:valid {
-  padding-top: 35px;
+  padding-top: 26px;
 }
 
 textarea.login-box-input:valid,
 textarea.login-box-input:focus {
-  margin-top: 35px;
+  margin-top: 26px;
 }
 
 input.login-box-input:focus + label > span,
