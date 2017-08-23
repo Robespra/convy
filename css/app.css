@@ -169,26 +169,153 @@
   padding: 1.5rem;
 }
 
-.login-box-input {
-  margin-bottom: 1.25rem;
-  height: 2rem;
+
+
+input,
+span,
+label,
+textarea {
+  display: block;
+  border: none;
+  font-family: 'Lato', sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+/* Question */
+
+input.login-box-input,
+textarea.login-box-input {
+  height: 3.1rem;
   border: 0;
   padding-left: 0;
+  padding-bottom: 0.7em;
   box-shadow: none;
-  border-bottom: 1px solid #321c52;
   font-weight: 400;
   background-color: transparent;
   border-radius: 0px;
+  width: 80%;
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
 }
 
-.login-box-input:focus {
-  color: #321c52;
-  transition: 0.2s ease-in-out;
-  box-shadow: none;
-  border: 0;
-  border-bottom: 2px solid #321c52;
-  background-color: transparent;
+
+
+
+
+input.login-box-input + label,
+textarea.login-box-input + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-bottom: 1px solid #321c52;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
 }
+
+input.login-box-input:focus + label,
+textarea.login-box-input:focus + label {
+  width: 80%;
+  background-color: transparent;
+
+}
+
+input.login-box-input:focus,
+input.login-box-input:valid {
+  padding-top: 35px;
+}
+
+textarea.login-box-input:valid,
+textarea.login-box-input:focus {
+  margin-top: 35px;
+}
+
+input.login-box-input:focus + label > span,
+input.login-box-input:valid + label > span {
+  top: -40px;
+  color: #333;
+  font-size: 10px;
+}
+
+textarea.login-box-input:focus + label > span,
+textarea.login-box-input:valid + label > span {
+  top: -150px;
+  color: #333;
+}
+
+input.login-box-input:valid + label,
+textarea.login-box-input:valid + label {
+  width: 90%;
+  border-color: #efde00;
+}
+
+input.login-box-input:invalid,
+textarea.login-box-input:invalid {
+  box-shadow: none;
+}
+
+input.login-box-input + label > span,
+textarea.login-box-input + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  top: -37px;
+  left: 0px;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+input[type="submit"] {
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+input.login-box-input:valid ~ input[type="submit"], textarea.login-box-input:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.login-box-input:invalid ~ input[type="submit"], textarea.login-box-input:invalid ~ input[type="submit"] {
+  background-color:#efde00;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .login-box-submit-button {
   display: inline-block;
