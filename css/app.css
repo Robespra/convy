@@ -154,7 +154,7 @@
 
 
 .convy_hero_inner h2{color:#fff;font-weight:normal;text-align:left;font-size:5em;overflow:visible;}
-.cta_box {z-index: 3;background-color:#00D3E1;overflow:hidden;height:370px;margin-top: -250px;}
+.cta_box {z-index: 3;background-color:#00D3E1;overflow:hidden;height: 400px;margin-top: -250px;}
 @media screen and (max-width: 39.9375em) {
   .cta_box {
     margin-top: 0px;
@@ -276,7 +276,7 @@ input[type="submit"] {
   transition: opacity 0.2s ease, background 0.2s ease;
   display: block;
   margin: 20px 0 0 0;
-  padding: 10px;
+      padding: 20px;
   cursor: pointer;
 }
 
@@ -303,37 +303,25 @@ input.login-box-input:invalid ~ input[type="submit"], textarea.login-box-input:i
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .login-box-submit-button {
   display: inline-block;
   vertical-align: middle;
-  padding: 0.8em;
+  padding: 0.4em 0.8em;
   -webkit-appearance: none;
   border: 1px solid transparent;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
   border-radius: 0;
-  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out, cubic-bezier(.03,1.12,.64,.99);
   line-height: 1;
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
   cursor: pointer;
   background-color: #efde00;
+      border-radius: 3px;
   color: #321c52;
   width: 100%;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+      box-shadow: 0 15px 35px rgba(0,0,0,.1);
 }
 
 [data-whatinput='mouse'] .login-box-submit-button {
@@ -424,6 +412,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efde00', end
   list-style-type: none;
 }
 
+.chosethatone {
+  border: solid 3px #00dde0;
+}
+
 .pricing-table li {
   border-bottom: dotted 1px #cacaca;
   padding: 0.875rem 1.125rem;
@@ -445,6 +437,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efde00', end
   border-bottom: 0;
 }
 
+.raye {text-decoration: line-through;
+text-align:right;}
+
+.reduction {
+  font-size: 1rem;
+}
+.saving {
+  text-align: left;
+  color: #5da423;
+  
+  font-weight: bold;
+}
 .pricing-table .description {
   color: #321c52;
   font-size: 80%;
@@ -760,4 +764,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efde00', end
   }
 }
 
-
+.button {
+      box-shadow: 0 15px 35px rgba(0,0,0,.1);
+    transition: all .2s cubic-bezier(.03,1.12,.64,.99);
+    font-size: 1.2rem;
+    padding: 1em 2em;
+}
