@@ -259,7 +259,7 @@ textarea.login-box-input:valid + label > span {
 input.login-box-input:valid + label,
 textarea.login-box-input:valid + label {
   width: 100%;
-  border-color: #efde00;
+  border-color: #00d3e1;
 }
 
 input.login-box-input:invalid,
@@ -294,7 +294,7 @@ input.login-box-input:valid ~ input[type="submit"], textarea.login-box-input:val
 }
 
 input.login-box-input:invalid ~ input[type="submit"], textarea.login-box-input:invalid ~ input[type="submit"] {
-  background-color:#efde00;
+  background-color:#00d3e1f1;
 }
 
 @-webkit-keyframes appear {
@@ -308,24 +308,10 @@ input.login-box-input:invalid ~ input[type="submit"], textarea.login-box-input:i
   }
 }
 
-.login-box-submit-button {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0.4em 0.8em;
-  -webkit-appearance: none;
-  border: 1px solid transparent;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  transition: background-color 0.25s ease-out, color 0.25s ease-out, cubic-bezier(.03,1.12,.64,.99);
-  line-height: 1;
-  font-size: 2em;
-  text-align: center;
-  cursor: pointer;
-  background-color: #efde00;
-      border-radius: 45px;
-  color: #321c52;
-  width: 100%;
-      box-shadow: 0 15px 35px rgba(0,0,0,.1);
+
+
+.btn-hero {
+  margin: 5% 0;
 }
 
 [data-whatinput='mouse'] .login-box-submit-button {
@@ -836,27 +822,23 @@ margin-right: 3%;
 color: #fff;
 text-align: left;
 }
-
 .blog {
     font-size: 2.5em;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
   }
-
   .text_center {
     text-align: center;
   }
-
    .text_right {
     text-align: right;
   }
-
-
 #frmContact {border-top:#F0F0F0 2px solid;background:#FAF8F8;padding:10px;}
 #frmContact div{margin-bottom: 15px}
 #frmContact div label{margin-left: 5px}
 .demoInputBox{padding:10px; border:#F0F0F0 1px solid; border-radius:4px;}
 .error{background-color: #FF6600;border:#AA4502 1px solid;padding: 5px 10px;color: #FFFFFF;border-radius:4px;}
-.success{background-color: #12CC1A;border:#0FA015 1px solid;padding: 5px 10px;color: #FFFFFF;border-radius:4px;}
+.success{padding: 5px 10px;text-align: center;}
 .info{font-size:.8em;color: #FF6600;letter-spacing:2px;padding-left:5px;}
 .btnAction{background-color:#2FC332;border:0;padding:10px 40px;color:#FFF;border:#F0F0F0 1px solid; border-radius:4px;}
+#msgSubmit {padding:5% 0;}

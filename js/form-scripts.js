@@ -38,7 +38,7 @@ function submitForm(){
 
 function formSuccess(){
     $("#contactForm")[0].reset();
-    submitMSG(true, "Message Submitted!")
+    submitMSG(true, "Your request has been correctly sent. We will provide feedback within 48h. Thank you.")
 }
 
 function formError(){
