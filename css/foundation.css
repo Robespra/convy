@@ -1059,10 +1059,10 @@ select {
     margin-left: 0; }
   .button.primary {
     background-color: #00dde0;
-    color: #0a0a0a; }
+    color: #fff; }
     .button.primary:hover, .button.primary:focus {
       background-color: #00b1b3;
-      color: #0a0a0a; }
+      color: #fff; }
   .button.secondary {
     background-color: #321c52;
     color: #fefefe; }

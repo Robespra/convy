@@ -1,4 +1,10 @@
 
+body{
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .padding10_both {
 	padding: 10% 0;
 }
@@ -77,8 +83,12 @@
 }
 
 .topbar-responsive .menu a {
-  color: #fefefe;
+  color: #cacaca;
   transition: color 0.15s ease-in;
+}
+
+.topbar-responsive .menu a.static{
+  color: #fff;
 }
 
 .topbar-responsive .menu a:hover {
@@ -109,6 +119,8 @@
     margin: 0.875rem 0;
   }
 }
+
+
 .hidden-h1{text-indent:100%;white-space:nowrap;overflow:hidden;position:absolute;z-index:-1;color:transparent;font-size:1px;left:-100vh;}
 
 .convy_hero_container {
@@ -117,7 +129,8 @@
     min-height: 83vh;
     overflow: hidden;
 }
-.convy_hero {background-color:#321c52;padding: 1%;color:#fff;
+.convy_hero {/* background-color:#321c52; */
+  padding: 1%;color:#fff;
   background-attachment: scroll;
     overflow: hidden;
         position: absolute;
@@ -144,7 +157,7 @@
     top: 0px;
     left: 0px;
     z-index: 2;
-    background: #321c52;
+    /* background: #321c52; */
     opacity: 0.90;
 }
 .convy_hero_inner {font-weight:normal;position: relative;
@@ -153,7 +166,8 @@
     }
 
 
-.convy_hero_inner h2{color:#fff;font-weight:normal;text-align:left;font-size:5em;overflow:visible;}
+.convy_hero_inner h2{color:#321c52;font-weight:normal;text-align:left;font-size:5em;overflow:visible;}
+h2.login-box-title {font-size:2em;}
 .cta_box {z-index: 3;background-color:#00D3E1;overflow:hidden;height: 400px;margin-top: -250px;}
 @media screen and (max-width: 39.9375em) {
   .cta_box {
@@ -168,8 +182,6 @@
 .login-box-social-section-inner {
   padding: 1.5rem;
 }
-
-
 
 input,
 span,
@@ -188,7 +200,7 @@ input:focus {
 
 input.login-box-input,
 textarea.login-box-input {
-  height: 3.1rem;
+  height: 3.8rem;
   border: 0;
   padding-left: 0;
   padding-bottom: 0.1em;
@@ -196,14 +208,10 @@ textarea.login-box-input {
   font-weight: 400;
   background-color: transparent;
   border-radius: 0px;
-  width: 80%;
+  width: 100%;
   transition: padding-top 0.2s ease, margin-top 0.2s ease;
   overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
 }
-
-
-
-
 
 input.login-box-input + label,
 textarea.login-box-input + label {
@@ -212,7 +220,7 @@ textarea.login-box-input + label {
   white-space: nowrap;
   padding: 0;
   margin: 0;
-  width: 10%;
+  width: 100%;
   border-bottom: 1px solid #321c52;
   -webkit-transition: width 0.4s ease;
   transition: width 0.4s ease;
@@ -221,19 +229,18 @@ textarea.login-box-input + label {
 
 input.login-box-input:focus + label,
 textarea.login-box-input:focus + label {
-  width: 80%;
   background-color: transparent;
 
 }
 
 input.login-box-input:focus,
 input.login-box-input:valid {
-  padding-top: 26px;
+  padding-top: 38px;
 }
 
 textarea.login-box-input:valid,
 textarea.login-box-input:focus {
-  margin-top: 26px;
+  margin-top: 38px;
 }
 
 input.login-box-input:focus + label > span,
@@ -251,7 +258,7 @@ textarea.login-box-input:valid + label > span {
 
 input.login-box-input:valid + label,
 textarea.login-box-input:valid + label {
-  width: 90%;
+  width: 100%;
   border-color: #efde00;
 }
 
@@ -272,8 +279,8 @@ textarea.login-box-input + label > span {
 }
 
 input[type="submit"] {
-  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
-  transition: opacity 0.2s ease, background 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   display: block;
   margin: 20px 0 0 0;
       padding: 20px;
@@ -295,13 +302,11 @@ input.login-box-input:invalid ~ input[type="submit"], textarea.login-box-input:i
     opacity: 1;
   }
 }
-
 @keyframes appear {
   100% {
     opacity: 1;
   }
 }
-
 
 .login-box-submit-button {
   display: inline-block;
@@ -311,14 +316,13 @@ input.login-box-input:invalid ~ input[type="submit"], textarea.login-box-input:i
   border: 1px solid transparent;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  border-radius: 0;
   transition: background-color 0.25s ease-out, color 0.25s ease-out, cubic-bezier(.03,1.12,.64,.99);
   line-height: 1;
   font-size: 2em;
   text-align: center;
   cursor: pointer;
   background-color: #efde00;
-      border-radius: 3px;
+      border-radius: 45px;
   color: #321c52;
   width: 100%;
       box-shadow: 0 15px 35px rgba(0,0,0,.1);
@@ -331,6 +335,8 @@ input.login-box-input:invalid ~ input[type="submit"], textarea.login-box-input:i
 .login-box-submit-button:hover, .login-box-submit-button:focus {
   background-color: #321c52;
   color: #ffffff;
+   transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 
 .login-box-submit-button:hover,
@@ -394,22 +400,24 @@ input.login-box-input:invalid ~ input[type="submit"], textarea.login-box-input:i
 
 
 .gradient-bg {
-  background: rgb(239,222,0); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(239,222,0,1) -1%, rgba(239,222,0,1) 0%, rgba(239,222,0,1) 14%, rgba(0,221,224,1) 63%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(239,222,0,1) -1%,rgba(239,222,0,1) 0%,rgba(239,222,0,1) 14%,rgba(0,221,224,1) 63%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(239,222,0,1) -1%,rgba(239,222,0,1) 0%,rgba(239,222,0,1) 14%,rgba(0,221,224,1) 63%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efde00', endColorstr='#00dde0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #321c52; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #321c52 0%, #00dde0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #321c52 0%,#00dde0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #321c52 0%,#00dde0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#321c52', endColorstr='#00dde0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .convy_pricing {
 	position: relative;
 }
 .pricing-table {
+  position: relative;
   background-color: #fefefe;
   border: solid 1px #cacaca;
   width: 100%;
   text-align: center;
   list-style-type: none;
+  min-height: 1000px;
 }
 
 .chosethatone {
@@ -421,8 +429,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efde00', end
   padding: 0.875rem 1.125rem;
 }
 
-.pricing-table li:last-child {
+/* .pricing-table li:last-child {
   border-bottom: 0;
+} */
+
+.bottom_cta {
+  position: absolute;
+  bottom: 0;
+      left: 10%;
 }
 
 .pricing-table .title {
@@ -445,7 +459,7 @@ text-align:right;}
 }
 .saving {
   text-align: left;
-  color: #5da423;
+  color: #00dde0;
   
   font-weight: bold;
 }
@@ -600,6 +614,7 @@ text-align:right;}
 
 .switch-field {
     overflow: hidden;
+    padding-left: 2%;
 }
 
 
@@ -731,7 +746,6 @@ text-align:right;}
 }
 
 .marketing-site-footer-bottom {
-  background: #321c52;
   padding: 1rem 0;
 }
 
@@ -769,4 +783,80 @@ text-align:right;}
     transition: all .2s cubic-bezier(.03,1.12,.64,.99);
     font-size: 1.2rem;
     padding: 1em 2em;
+  border-radius: 45px;
+
 }
+
+.button:hover{
+     transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+
+
+
+
+
+
+
+/* from meka app.css */
+
+
+
+.callout.primary, .top-bar, .top-bar ul {
+  background: transparent;
+  border: none;position: relative;
+  z-index: 2;
+}
+
+
+
+.cui_article_container {
+background-color: #fff;
+ padding: 1%;
+margin: 1% 1%;
+width: 46%;
+overflow: hidden;
+float: left;
+}
+.cui_article_container a {
+font-size: 0.75em;
+}
+
+.cui_article_container:hover{
+opacity: 0.8;
+}
+.cui_article_image {
+max-width: 70px;
+max-height: 50px;
+float: left;
+margin-right: 3%;
+}
+.gradient-bg h2{
+color: #fff;
+text-align: left;
+}
+
+.blog {
+    font-size: 2.5em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+  }
+
+  .text_center {
+    text-align: center;
+  }
+
+   .text_right {
+    text-align: right;
+  }
+
+
+#frmContact {border-top:#F0F0F0 2px solid;background:#FAF8F8;padding:10px;}
+#frmContact div{margin-bottom: 15px}
+#frmContact div label{margin-left: 5px}
+.demoInputBox{padding:10px; border:#F0F0F0 1px solid; border-radius:4px;}
+.error{background-color: #FF6600;border:#AA4502 1px solid;padding: 5px 10px;color: #FFFFFF;border-radius:4px;}
+.success{background-color: #12CC1A;border:#0FA015 1px solid;padding: 5px 10px;color: #FFFFFF;border-radius:4px;}
+.info{font-size:.8em;color: #FF6600;letter-spacing:2px;padding-left:5px;}
+.btnAction{background-color:#2FC332;border:0;padding:10px 40px;color:#FFF;border:#F0F0F0 1px solid; border-radius:4px;}
