@@ -871,19 +871,6 @@ text-align: left;
   }
 }
 .mobile_phone {
-  img {
-      position:relative;
-      margin:0 auto;
-      text-align:center;
-      display:block;
-      border-radius: 5px;
-      width:300px;
-      height:532px;
-      box-shadow: 0 1px 1px 0 rgba(43,49,58,0), 
-               -2px 2px 1px 0 rgba(43,49,58,0), 
-         inset 1px -1px 1px 0 rgba(255,255,255,0), 
-         inset 1px -2px 1px 0 rgba(202,207,211,0);
-  }
   width:325px;
   height:572px;
   border-radius: 45px;
@@ -896,8 +883,23 @@ text-align: left;
   background-color: #fff; 
   padding:60px 2px 45px 10px;
 }
+
+ .mobile_phone img {
+      position:relative;
+      margin:0 auto;
+      text-align:center;
+      display:block;
+      border-radius: 5px;
+      width:300px;
+      height:532px;
+      box-shadow: 0 1px 1px 0 rgba(43,49,58,0), 
+               -2px 2px 1px 0 rgba(43,49,58,0), 
+         inset 1px -1px 1px 0 rgba(255,255,255,0), 
+         inset 1px -2px 1px 0 rgba(202,207,211,0);
+  }
+  
 .circle-button {
-//  transform: translate(0, 0);
+transform: translate(0, 0);
   box-shadow: 
     inset 2px -2px 2px 0 rgba(255,255,255,0.20),
     inset -5px -5px 10px 0 rgba(202,207,211,0.40);
@@ -911,16 +913,18 @@ text-align: left;
 
 }
 
-.transitionAll() {
-  -webkit-transition: all 0.35s;
-     -moz-transition: all 0.35s;
-          transition: all 0.35s;
+
+@keyframes pulse {
+  0% { transform: scaleY(1) }
+  50% { transform: scaleY(1.25) }
+  100% { transform: scaleY(1) }
 }
-.transitionAllBezier() {
-   -webkit-transition: all 250ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
-      -moz-transition: all 250ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
-        -o-transition: all 250ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
-           transition: all 250ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+
+.svg-flow-hero .flow {
+  animation: pulse 2s infinite;
+
 }
+
+
 
 
