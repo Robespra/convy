@@ -45,7 +45,7 @@ if (empty($_POST["email"])) {
 }
 
 
-$EmailTo = "convy18@gmail.com";
+$EmailTo = "hello@convy.io";
 $Subject = "New Convy Bottom Form Request Received";
 
 // prepare email body text
