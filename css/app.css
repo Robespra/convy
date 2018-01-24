@@ -580,6 +580,7 @@ text-align:right;}
 
 .convy_sectors {
   position: relative;
+  text-align: center;
 }
 .convy_sectors label{
   font-size: 1.5rem;
@@ -597,6 +598,7 @@ text-align:right;}
 .convy_contact_h2 {
       color: #fff;
     font-size: 4em;
+    text-align: center;
 }
 .index_twitter_bg_setup{
     position: relative;
@@ -910,8 +912,8 @@ text-align: left;
   }
 }
 .mobile_phone {
-  width:325px;
-  height:572px;
+  min-width:325px;
+  min-height:572px;
   border-radius: 45px;
   display:block;
   transform: translate(0, 0);
@@ -920,7 +922,7 @@ text-align: left;
     inset 3px -2px 5px 0 rgba(255,255,255,0.51),
     inset 6px -7px 15px 0 rgba(202,207,211,0.75);
   background-color: #fff; 
-  padding:10px 2px 45px 10px;
+  padding:3px 2px 10px 10px;
 }
 
  .mobile_phone img {
@@ -929,30 +931,14 @@ text-align: left;
       text-align:center;
       display:block;
       border-radius: 45px;
-      width:300px;
-      height:543px;
+      min-width:300px;
+      min-height:543px;
       box-shadow: 0 1px 1px 0 rgba(43,49,58,0), 
                -2px 2px 1px 0 rgba(43,49,58,0), 
          inset 1px -1px 1px 0 rgba(255,255,255,0), 
          inset 1px -2px 1px 0 rgba(202,207,211,0);
   }
   
-.circle-button {
-transform: translate(0, 0);
-  box-shadow: 
-    inset 2px -2px 2px 0 rgba(255,255,255,0.20),
-    inset -5px -5px 10px 0 rgba(202,207,211,0.40);
-  background-color: #fff; 
-  border:1px solid #f2f2f2;
-  display:block;
-  height:50px;
-  width:50px;
-  border-radius: 150px;
-  margin:10px auto;
-
-}
-
-
 @keyframes pulse {
   0% { transform: scaleY(1) }
   50% { transform: scaleY(1.23) }
@@ -977,3 +963,8 @@ transform: translate(0, 0);
   height: 120px;
 }
 
+.trust {
+  margin-top: 10%;
+  background-color:#25dddf;
+  color: #fff;
+}
