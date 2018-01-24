@@ -168,6 +168,15 @@ body{
 
 
 .convy_hero_inner h2{color:#321c52;font-weight:normal;text-align:left;font-size:5em;overflow:visible;}
+
+@media screen and (max-width: 39.9375em) {
+  .convy_hero_inner h2 {
+    font-size:3.5em;
+  }
+}
+
+
+
 h2.login-box-title {font-size:2em;}
 .cta_box {z-index: 3;background-color:#00D3E1;overflow:hidden;height: 400px;margin-top: -250px;}
 @media screen and (max-width: 39.9375em) {
