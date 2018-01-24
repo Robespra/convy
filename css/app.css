@@ -131,7 +131,8 @@ body{
 }
 .convy_hero {/* background-color:#321c52; */
       width: 100%;
-  padding: 1%;color:#fff;
+  padding: 1% 0;
+  color:#fff;
   background-attachment: scroll;
     overflow: hidden;
         position: absolute;
@@ -355,7 +356,18 @@ input.login-box-input:invalid ~ input[type="submit"], textarea.login-box-input:i
 .convy_hdiw {
 	position: relative;
 	color: #321c52;
+  font-size: 0.7em;
 }
+
+.column_border_left {
+  border-left: 1px solid #321c52;
+}
+
+.column_border_right {
+  border-right: 1px solid #321c52;
+}
+
+
 /** animated boxes **/
 .animBlock {
   display: inline-block;
@@ -469,7 +481,7 @@ text-align:right;}
 .full-width-testimonial {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../img/testimonial2.jpg");
   background-position: center center;
-  min-height: 400px; 
+  min-height: 475px; 
    /*  background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -577,7 +589,11 @@ text-align:right;}
   max-width:170px;
 }   
 
-
+.convy_contact {
+  margin-top: -27px;
+    z-index: 9999;
+    position: relative;
+}
 .convy_contact_h2 {
       color: #fff;
     font-size: 4em;
@@ -598,6 +614,7 @@ text-align:right;}
   transform: skewY(-3deg);
   transform-origin: top left;
   z-index: -9999;
+  background-color: #25dddf;
 }
 
 
@@ -676,7 +693,6 @@ text-align:right;}
   background: #ffffff;
   color: #8aa0ae;
   padding: 2rem 0 0;
-  border-top: 3px solid #321c52;
 }
 
 .marketing-site-footer .marketing-site-footer-menu-social a {
@@ -750,7 +766,7 @@ text-align:right;}
 }
 
 .marketing-site-footer-bottom .marketing-site-footer-bottom-links a {
-  color: #fff;
+  color: #321c52;
 }
 
 @media screen and (max-width: 63.9375em) {
@@ -846,10 +862,33 @@ text-align: left;
 .btnAction{background-color:#2FC332;border:0;padding:10px 40px;color:#FFF;border:#F0F0F0 1px solid; border-radius:4px;}
 #msgSubmit {padding:5% 0;}
 
+.phone_container {
+      position: absolute;
+    z-index: -1;
+    left: 30%;
+    top: 28%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.phone_container2 {
+      position: absolute;
+    z-index: -1;
+    left: 30%;
+    bottom: -19%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
 .isometric {
   width:300px;
   float:left;
-  z-index:1;
+  z-index:-1;
   display:inline-block;
     transform: scale(1, 0.775) 
       rotate(346.25deg) 
@@ -881,7 +920,7 @@ text-align: left;
     inset 3px -2px 5px 0 rgba(255,255,255,0.51),
     inset 6px -7px 15px 0 rgba(202,207,211,0.75);
   background-color: #fff; 
-  padding:60px 2px 45px 10px;
+  padding:10px 2px 45px 10px;
 }
 
  .mobile_phone img {
@@ -889,9 +928,9 @@ text-align: left;
       margin:0 auto;
       text-align:center;
       display:block;
-      border-radius: 5px;
+      border-radius: 45px;
       width:300px;
-      height:532px;
+      height:543px;
       box-shadow: 0 1px 1px 0 rgba(43,49,58,0), 
                -2px 2px 1px 0 rgba(43,49,58,0), 
          inset 1px -1px 1px 0 rgba(255,255,255,0), 
@@ -916,15 +955,25 @@ transform: translate(0, 0);
 
 @keyframes pulse {
   0% { transform: scaleY(1) }
-  50% { transform: scaleY(1.25) }
+  50% { transform: scaleY(1.23) }
   100% { transform: scaleY(1) }
 }
 
 .svg-flow-hero .flow {
-  animation: pulse 2s infinite;
+  animation: pulse 8s infinite;
 
 }
 
 
+.zindex_illustr{
+      z-index: 9999;
+    position: relative;
+}
 
+.empty_block {
+  width: 100%;
+  display: block;
+  position: relative;
+  height: 120px;
+}
 
