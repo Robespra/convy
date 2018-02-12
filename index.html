@@ -63,6 +63,20 @@ drift.SNIPPET_VERSION = '0.3.1';
 drift.load('c7hbrhuynsy8');
 </script>
 <!-- End of Async Drift Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113130058-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113130058-1');
+</script>
+
+
+
+
   </head>
   <body>
   <h1 class="hidden-h1">convy</h1>
@@ -231,13 +245,25 @@ function validateContact() {
 <div id="convy_hdiw" class="convy_hdiw padding10_both">
 
 <div class="row_container">
+  
+<div class="wrapper"><div class="example text">
+    <a href="#" class="parallax" data-imgname="http://preview.vertic.com/vertic/labs/examples/parallaxhover/5/4-6-*.png" data-levels="8" data-space="30">
+      4.-6. klasse
+    </a>
+    <a href="#" class="parallax" data-imgname="http://preview.vertic.com/vertic/labs/examples/parallaxhover/5/7-10-*.png" data-levels="8" data-space="30">
+      7.-10. klasse
+    </a>
+  </div></div>
+
+
+
 <div class="row zindex_illustr">
 <div class="small-11 medium-12 columns">
 <h2 class="padding5_bottom">A Proven Methodolodgy</h2>
 <div class="row">
   <div class="medium-1 columns"></div>
 <div class="small-10 medium-3 columns column_border_right">
-<h5 class="">Analytics and Content Audit</h5>
+<h5 class="">Observation</h5>
 <p class="lead">We take a picture of your current KPI Definition (Data collection) and Conversion Funnel Definition on targeted part of your App or Site in order to identify funnel leaks where conversion can be improved.</p>
 <div class="empty_block"></div>
 </div> <!-- column-text -->
@@ -270,7 +296,7 @@ function validateContact() {
 <div class="row">
   <div class="medium-1 columns"></div>
 <div class="small-10 medium-3 columns column_border_right">
-<h5 class="">Optimization</h5>
+<h5 class="">Optimization & Testing</h5>
 <p class="lead">We will setup and conduct direct improvements, by testing them in a dedicated environment or create a fully new prototype (development costs included in pricing options).</p>
 <div class="empty_block"></div>
 </div> <!-- column-text -->
@@ -458,7 +484,7 @@ Unbeatable price and quality.
 
 <div class="small-12 medium-11 columns card ">
   <div class="card-section">
-    <form role="form" id="contactForm" data-toggle="validator" class="shake">
+    <form role="form" id="contactForm" data-toggle="validator">
    <div class="row align-left">
     <div class="small-12 medium-6 columns">
       <label><span>Please select the services you are interested in :</span></label>
@@ -548,11 +574,12 @@ Unbeatable price and quality.
         <div class="column small-12">
         <ul class="menu marketing-site-footer-bottom-links">
           <li><a href="#">Home</a></li>
-          <li><a href="static/about">About</a></li>
-          <li><a href="static/services">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="static/privacy" target="_blank">Privacy</a></li>
+          <li><a href="static/terms" target="_blank">Terms of service</a></li>
           <!-- <li><a href="static/about">Works</a></li>
           <li><a href="#">News</a></li> -->
-          <li><a href="static/contact">Contact</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="column small-12">
@@ -599,6 +626,172 @@ Unbeatable price and quality.
 
 </footer>
 </div>
+<script>
+if ("undefined" != typeof jQuery) {
+  (function(a) {
+    a.imgpreload = function(b, c) {
+      c = a.extend({}, a.fn.imgpreload.defaults, c instanceof Function ? {
+        all: c
+      } : c);
+      if ("string" == typeof b) {
+        b = [b]
+      }
+      var d = [];
+      var e = b.length;
+      for (var f = 0; f < e; f++) {
+        var g = new Image;
+        a(g).bind("load error", function(b) {
+          d.push(this);
+          a.data(this, "loaded", "error" == b.type ? false : true);
+          if (c.each instanceof Function) {
+            c.each.call(this)
+          }
+          if (d.length >= e && c.all instanceof Function) {
+            c.all.call(d)
+          }
+        });
+        g.src = b[f]
+      }
+    };
+    a.fn.imgpreload = function(b) {
+      var c = [];
+      this.each(function() {
+        c.push(a(this).attr("src"))
+      });
+      a.imgpreload(c, b);
+      return this
+    };
+    a.fn.imgpreload.defaults = {
+      each: null,
+      all: null
+    }
+  })(jQuery)
+}
+// DOM ready
+$(document).ready(function() {
+  var _ParallaxHover = function(el) {
+      // Set up handle
+      var t = this,
+        $orig = $(el);
+      // Extend object with handy variables
+      t.$link = $orig.clone().addClass('enhanced');
+      t.levels = parseInt(t.$link.data('levels'));
+      t.space = parseInt(t.$link.data('space'));
+      t.imgName = t.$link.data('imgname');
+      t.images = new Array();
+      t.pos = $orig.offset();
+      t.dim = {
+        w: $orig.outerWidth(),
+        h: $orig.outerHeight()
+      };
+      t.$levels = $();
+      t.threshold = 1;
+      t.cPos = {
+        x: t.dim.w / 2,
+        y: t.dim.h / 2
+      };
+      t.tPos = {
+        x: t.cPos.x,
+        y: t.cPos.y
+      };
+      t.vPos = {
+        x: 0,
+        y: 0
+      };
+      t.interval;
+      t.isLooping = false;
+      // Set up elements and bind events
+      if (t.levels > 0 && t.space > 0 && t.imgName.indexOf('*') > -1) {
+        for (var i = 0; i < t.levels; i++) {
+          (function() {
+            var levelImgName = t.imgName.replace('*', i),
+              index = i + 1,
+              mid = Math.round(t.levels / 2),
+              dist = (index - mid) / (t.levels - mid),
+              $level = $('<span />').addClass('level').data('dist', dist).css('background-image', 'url(' + levelImgName + ')').prependTo(t.$link);
+            t.$levels.push($level);
+            t.images.push(levelImgName);
+          })();
+        }
+        t.$link.mousemove(function(e) {
+          var mPos = {
+            x: e.pageX,
+            y: e.pageY
+          },
+            xPos = mPos.x - t.pos.left,
+            yPos = mPos.y - t.pos.top;
+          t.tPos = {
+            x: xPos,
+            y: yPos
+          };
+          t.startAnimationLoop();
+        }).mouseenter(function() {
+          t.startAnimationLoop();
+        }).mouseleave(function() {
+          t.tPos.x = t.dim.w / 2;
+          t.tPos.y = t.dim.h / 2;
+        });
+        $.imgpreload(t.images, function() {
+          $orig.replaceWith(t.$link);
+        });
+      }
+      // Return object
+      return this;
+    };
+  _ParallaxHover.prototype.animateTo = function(x, y) {
+    var t = this;
+    t.tPos = {
+      x: x,
+      y: y
+    };
+    t.startAnimationLoop();
+  };
+  _ParallaxHover.prototype.startAnimationLoop = function() {
+    var t = this;
+    if (!t.isLooping) {
+      t.isLooping = true;
+      t.interval = setInterval(function() {
+        t.animationLoop();
+      }, 35);
+    }
+  };
+  _ParallaxHover.prototype.setPosition = function() {
+    var t = this;
+    t.$levels.each(function() {
+      var $level = $(this);
+      $level.css({
+        'top': -((t.cPos.y / t.dim.h) * 2 - 1) * t.space * $level.data('dist'),
+        'left': -((t.cPos.x / t.dim.w) * 2 - 1) * t.space * $level.data('dist')
+      });
+    });
+    return t.cPos;
+  };
+  _ParallaxHover.prototype.animationLoop = function() {
+    var t = this,
+      x = (t.tPos.x - t.cPos.x),
+      y = (t.tPos.y - t.cPos.y);
+    t.vPos.x *= 0.7;
+    t.vPos.y *= 0.7;
+    x *= 0.10;
+    y *= 0.10;
+    t.vPos.x += x;
+    t.vPos.y += y;
+    t.cPos.x += t.vPos.x;
+    t.cPos.y += t.vPos.y;
+    if (t.vPos.x >= t.threshold || t.vPos.y >= t.threshold || t.vPos.x <= -t.threshold || t.vPos.y <= -t.threshold) {
+      t.setPosition();
+    } else {
+      t.isLooping = false;
+      clearInterval(t.interval);
+    }
+  };
+  $('.parallax').each(function() {
+    window.parallaxHover = new _ParallaxHover(this);
+  });
+});
+</script>
+
+
 <script>
 $(document).on('click', 'a', function(event){
     event.preventDefault();
