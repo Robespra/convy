@@ -1032,3 +1032,96 @@ color: #fff;
       background:none;
     }
 
+    .icon-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.bg_triangle_round1 { 
+  width: 500px;
+    z-index: -1;
+    height: 500px;
+    position: absolute;
+    left: -200px;
+    top: 10px;
+  }
+.bg_triangle1 {
+      width: 800px;
+    z-index: -1;
+    height: 800px;
+    position: absolute;
+    right: -30%;
+    top: 24%;
+}
+.bg_triangle2 {
+      transform: skewX(-32deg);
+    width: 700px;
+    z-index: -1;
+    height: 700px;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -11%;
+      
+}
+    
+
+.bg_square_round1 {
+    width: 650px;
+    z-index: -1;
+    height: 650px;
+    position: absolute;
+}
+.bg_round1{
+    width: 210px;
+    z-index: -1;
+    height: 210px;
+    }
+.bg_round, .bg_square_round, .bg_triangle, .bg_triangle_round {
+    width: 500px;
+    z-index: -1;
+    height: 500px;
+    position: absolute;
+    margin-left: 30%;
+}
+.bg_round2{
+  position: absolute;
+  width: 250px;
+    z-index: -1;
+    height: 250px;
+    right: 10%;
+}
+
+.bg_triangle_round1, .bg_triangle1, .bg_square_round, .bg_triangle, .bg_triangle_round, .bg_round2 {
+stroke: #ff616e;
+  fill: none;
+  }
+.bg_square_round1, .bg_triangle2, .bg_round1{
+  stroke: #ffc171;
+  fill: none;
+
+}
+
+.pattern_blue_bg{
+  width: 50em;
+  height: 50em;
+  z-index: -9999;
+  position: absolute;
+  margin-top: -11%;
+  right: 5%;
+  opacity: 0.5;
+}
+
+.pattern_blue_bg_detail1 {
+    width: 77%;
+    height: auto;
+    z-index: -9999;
+    position: absolute;
+    margin-top: -21%;
+    left: -4%;
+    opacity: 0.5;
+}
+
