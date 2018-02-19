@@ -351,7 +351,7 @@ function validateContact() {
 <ul class="pricing-table">
   <li class="title gradient-bg">Quick Wins</li>
   <li class="price">Fixed price 450£</li>
-  <li><a class="button specific" href="#convy_contact">Start today</a></li>
+  <li><a class="button free" href="#convy_contact">Start today</a></li>
   <li class="description">Get your high-level reports and guides to improve conversion for a specific part of your App or Site</li>
   <li class="description">PET Checklist</li>
   <li class="description">Front-end Checklist</li>
@@ -389,7 +389,7 @@ function validateContact() {
 <ul class="pricing-table">
   <li class="title gradient-bg">FULL optimization</li>
   <li class="price">Project setup</li>
-  <li><a class="button specific" href="#convy_contact">Start today</a></li>
+  <li><a class="button multiple" href="#convy_contact">Start today</a></li>
   <li class="description">Includes reports, unlimited funnels optimization plus the following :</li>
   <li class="description">A dedicated account manager will be assigned</li>
   <li class="description">Field Study & User Interview</li>
@@ -580,8 +580,8 @@ Unbeatable price and quality.
         <ul class="menu marketing-site-footer-bottom-links">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="static/privacy" target="_blank">Privacy</a></li>
-          <li><a href="static/terms" target="_blank">Terms of service</a></li>
+          <li><a href="static/privacy" target="_blank" rel="noopener">Privacy</a></li>
+          <li><a href="static/terms" target="_blank" rel="noopener">Terms of service</a></li>
           <!-- <li><a href="static/about">Works</a></li>
           <li><a href="#">News</a></li> -->
           <li><a href="#">Contact</a></li>
@@ -631,6 +631,43 @@ Unbeatable price and quality.
 
 </footer>
 </div>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    $(".free").click(function () {
+
+  $('input:radio[name=type]:nth(0)').attr('checked',true);
+  //$('input:radio[name=sex]')[0].checked = true;
+
+    });
+
+    $(".specific").click(function () {
+
+  $('input:radio[name=type]:nth(1)').attr('checked',true);
+  //$('input:radio[name=sex]')[1].checked = true;
+
+    });
+
+    $(".multiple").click(function () {
+
+  $('input:radio[name=type]:nth(2)').attr('checked',true);
+  //$('input:radio[name=sex]')[2].checked = true;
+
+    });
+
+    $(".productivity").click(function () {
+
+  $('input:radio[name=type]:nth(3)').attr('checked',true);
+
+    });
+
+  });
+</script>
+
+
+
 <script>
 if ("undefined" != typeof jQuery) {
   (function(a) {
