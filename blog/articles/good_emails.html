@@ -39,6 +39,17 @@
     <link rel="stylesheet" href="../../css/foundation.css">
     <link rel="stylesheet" href="../../css/app.css">
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script>
+        function track(name,label){
+        ga('send', 'event', name, 'click', label, {
+            hitCallback: function(){
+            console.log('Event sent to Google Analytics');
+                }
+            });
+        }
+</script>
+
   </head>
   <body>
  <div class="bg-static"> 

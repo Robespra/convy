@@ -47,7 +47,15 @@
 
   gtag('config', 'UA-113130058-1');
 </script>
-
+<script>
+        function track(name,label){
+        ga('send', 'event', name, 'click', label, {
+            hitCallback: function(){
+            console.log('Event sent to Google Analytics');
+                }
+            });
+        }
+</script>
 
   </head>
   <body>
@@ -55,35 +63,31 @@
     <!-- Start gradient-bg -->
     <nav class="top-bar topbar-responsive">
   <div class="top-bar-title">
-  <h1 class="hidden-h1">convy blog</h1>
+  <h1 class="hidden-h1">convy pro tips</h1>
   <a href="https://www.mekacreative.io" onclick="track('Click-logo-top-blog','Click-logo-top-blog')" rel="canonical">
   <img class="convy_logo_app" src="../img/convy_logo.svg">
   </a>
   </div>
-<div class="row convy_hero_inner">
-<nav class="top-bar topbar-responsive">
-  
-  <div id="topbar-responsive" class="topbar-responsive-links">
+
+
 
     <div class="top-bar-right">
       <ul class="menu simple vertical medium-horizontal">
-
         <li>
-          <a class="static" href="https://www.convy.io/#convy_hdiw" onclick="track('Click-logo-top-hdiw','Click-logo-top-hdiw')" rel="canonical">How does it work?</a>
+          <a class="static" href="https://www.convy.io/#convy_hdiw" onclick="track('Click-logo-top-blog-hdiw','Click-logo-top-hdiw')" rel="canonical">How does it work?</a>
         </li>
         <li>
-          <a class="static" href="https://www.convy.io/#convy_pricing" onclick="track('Click-logo-top-pricing','Click-logo-top-pricing')" rel="canonical">Pricing</a>
+          <a class="static" href="https://www.convy.io/#convy_pricing" onclick="track('Click-logo-top-blog-pricing','Click-logo-top-pricing')" rel="canonical">Pricing</a>
         </li>
         <li>
-          <a class="static" href="http://www.convy.io/blog/blog" onclick="track('Click-logo-top-blog','Click-logo-top-blog')" rel="canonical">Resources</a>
+          <a class="static" href="http://www.convy.io/blog/blog" onclick="track('Click-logo-top-blog-blog','Click-logo-top-blog')" rel="canonical">Resources</a>
         </li>
         <li>
-          <a class="static" href="https://www.convy.io/#convy_contact" onclick="track('Click-logo-top-contact','Click-logo-top-contact')" rel="canonical">Contact</a>
+          <a class="static" href="https://www.convy.io/#convy_contact" onclick="track('Click-logo-top-blog-contact','Click-logo-top-contact')" rel="canonical">Contact</a>
         </li>
       </ul>
-    </div>
   </div>
-</nav>
+    </nav>
 
 
    
@@ -117,46 +121,48 @@
 </div>
     <div class="callout large primary">
       <div class="row column text-center">
-        <h2>our blog</h2>
+        <h2>Convy's Pro Tips</h2>
       </div>
     </div>
  </div>
+
+   </div>
     <!-- End gradient-bg -->
 <div class="row padding10_bottom" id="content">
       <div class="medium-8 columns">
         <div class="blog-post">
-          <a class="blog" href="articles/visual_hierarchy">Introduction to Visual hierarchy</a> <small> 3/10/2017</small>
+          <a class="blog" href="articles/visual_hierarchy" onclick="track('convy-article-visual-hierarchy','convy-article-visual-hierarchy')">5 Pro Tips for Visual Hierarchy</a> <small> 3/10/2017</small>
           <img class="thumbnail" src="../img/blog_paradoxes.svg">
           <p>By adding visual “weight” to certain parts of your design, you increase the chance that a user will see them and you change where their eyes will go next.</p>
           <div class="padding5_top"></div>
-          <a href="articles/visual_hierarchy">read more...</a>
+          <a href="articles/visual_hierarchy" onclick="track('convy-article-visual-hierarchy-readmore','convy-article-visual-hierarchy-readmore')">read more...</a>
           <div class="padding5_both"></div>
         </div>
 <hr>
         <div class="blog-post">
-          <a class="blog" href="articles/frontend_checklist">Front end checklist</a> <small> 11/01/2018</small>
+          <a class="blog" href="articles/frontend_checklist" onclick="track('convy-article-frontend','convy-article-frontend')">5 Pro Quick Front-End Checks</a> <small> 11/01/2018</small>
           <img class="thumbnail" src="../img/blog_empathy.svg">
           <p>Make sure your website is fully optimized.</p>
           <div class="padding5_top"></div>
-          <a href="articles/frontend_checklist">read more...</a>
+          <a href="articles/frontend_checklist" onclick="track('convy-article-frontend-readmore','convy-article-frontend-readmore')">read more...</a>
           <div class="padding5_both"></div>
         </div>
 <hr>
         <div class="blog-post">
-          <a class="blog" href="articles/attractive_digital">Why attractive digital products work better?</a><small> 3/9/2017</small>
+          <a class="blog" href="articles/attractive_digital" onclick="track('convy-article-attractive','convy-article-attractive')">5 Pro Tips To Make Your Product More Attractive</a><small> 3/9/2017</small>
           <img class="thumbnail" src="../img/blog_solitude.svg">
           <p>Hint : it's all in the brain (again?!) ;-)</p>
           <div class="padding5_top"></div>
-          <a href="articles/attractive_digital">read more...</a>
+          <a href="articles/attractive_digital" onclick="track('convy-article-attractive-readmore','convy-article-attractive-readmore')">read more...</a>
           <div class="padding5_both"></div>
         </div>
 <hr>
         <div class="blog-post">
-          <a class="blog" href="articles/good_emails">Are you sending good emails?</a><small>03/03/2018</small>
+          <a class="blog" href="articles/good_emails" onclick="track('convy-article-emails','convy-article-emails')">5 Pro Tips To Make Emails That Convert</a><small>03/03/2018</small>
           <img class="thumbnail" src="../img/blog_drugs.svg">
           <p>Things we’ve learned about design emails that convert</p>
           <div class="padding5_top"></div>
-          <a href="articles/good_emails">read more...</a>
+          <a href="articles/good_emails" onclick="track('convy-article-emails-readmore','convy-article-emails-readmore')">read more...</a>
          <div class="padding5_both"></div>
          <hr>
         </div>
