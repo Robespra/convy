@@ -1092,3 +1092,18 @@ stroke: #ff616e;
     opacity: 0.5;
 }
 
+.thumbnail {
+      opacity: 0.5;
+      border: none;
+}
+
+.callout{
+  border: none;
+}
+
+.text-danger {
+      background: #fd8a39;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 5%;
+}
