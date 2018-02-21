@@ -65,16 +65,25 @@ drift.load('c7hbrhuynsy8');
 <!-- End of Async Drift Code -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113130058-1"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113130058-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-113130058-1');
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+        function track(name,label){
+        ga('send', 'event', name, 'click', label, {
+            hitCallback: function(){
+            console.log('Event sent to Google Analytics');
+                }
+            });
+        }
 </script>
-
-
 
 
   </head>
@@ -112,7 +121,7 @@ drift.load('c7hbrhuynsy8');
           <a href="#convy_pricing" onclick="track('Click-logo-top-pricing','Click-logo-top-pricing')" rel="canonical">Pricing</a>
         </li>
         <li>
-          <a href="https://www.convy.io/read/read.html" onclick="track('Click-logo-top-blog','Click-logo-top-blog')" rel="canonical">Optimization tips</a>
+          <a href="read/read.html" onclick="track('Click-logo-top-blog','Click-logo-top-blog')" rel="canonical">Resources</a>
         </li>
         <li>
           <a href="#convy_contact" onclick="track('Click-logo-top-contact','Click-logo-top-contact')" rel="canonical">Contact</a>
@@ -579,9 +588,9 @@ Unbeatable price and quality.
         <div class="column small-12">
         <ul class="menu marketing-site-footer-bottom-links">
           <li><a href="#">Home</a></li>
-          <li><a href="read/read.html">Optimization Tips</a></li>
-          <li><a href="static/privacy" target="_blank" rel="noopener">Privacy</a></li>
-          <li><a href="static/terms" target="_blank" rel="noopener">Terms of service</a></li>
+          <li><a href="read/read">Optimization Tips</a></li>
+          <li><a href="static/privacy">Privacy</a></li>
+          <li><a href="static/terms">Terms of service</a></li>
           <!-- <li><a href="static/about">Works</a></li>
           <li><a href="#">News</a></li> -->
           <li><a href="#convy_contact">Contact</a></li>

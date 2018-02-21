@@ -407,6 +407,8 @@ input.login-box-input:invalid ~ input[type="submit"], textarea.login-box-input:i
 
 
 .gradient-bg {
+  position: relative;
+      overflow: hidden;
   background:#cef5f8; /* Old browsers */
 background: -moz-linear-gradient(-45deg, #321c52 0%, #00dde0 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(-45deg, #321c52 0%,#00dde0 100%); /* Chrome10-25,Safari5.1-6 */
@@ -817,6 +819,11 @@ margin-right: 3%;
 .gradient-bg h2{
 color: #fff;
 text-align: left;
+font-size: 2.5em;
+}
+.gradient-bg h1{
+color: #fff;
+text-align: left;
 font-size: 5em;
 }
 .blog {
@@ -1111,4 +1118,9 @@ stroke: #ff616e;
 p {
       font-size: 18px;
     line-height: 1.58;
+}
+
+img.hero-bg-article {
+position: absolute;
+opacity: 0.8;
 }
