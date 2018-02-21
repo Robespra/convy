@@ -1107,3 +1107,8 @@ stroke: #ff616e;
     color: #fff;
     margin-top: 5%;
 }
+
+p {
+      font-size: 18px;
+    line-height: 1.58;
+}
