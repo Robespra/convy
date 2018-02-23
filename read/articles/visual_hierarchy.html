@@ -1,6 +1,16 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113130058-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113130058-1');
+</script>
+
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, minimum-scale=1, user-scalable = no">
 <meta name="apple-touch-fullscreen" content="yes">
@@ -36,17 +46,6 @@
 <meta http-equiv="cleartype" content="on">
     <link rel="stylesheet" href="../../css/foundation.css">
     <link rel="stylesheet" href="../../css/app.css">
-    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113130058-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-113130058-1');
-</script>
-
 <script>
         function track(name,label){
         ga('send', 'event', name, 'click', label, {
@@ -113,7 +112,13 @@
 
 <h3 class="padding5_top">2) Think Contrast First</h3>
 <p>If the page or app you developped followed the classic design process, wireframes should have been provided in the first steps. Wireframes rely on few colors/contrasts and basic design principles that make the visual hierarchy clear and powerful. Visual design and color addition can sometimes dilute the original visual weight and hierarchy.</p>
-<p>Contrast rules our perception, not colors. Various usability studies confirmed that the elements that convert best are meeting high contrast standards. Keep this in mind when designing the final design. Are contrasts still powerfull enough to clearly identify user and business goals ?</p>
+    <video autoplay loop muted class="video_article">
+        <source src="../../img/blog_hierarchy_contrast.mp4" type="video/mp4">
+    </video>
+<div class="image_caption">Good use of contrasts and white spaces
+<a class="caption_source" target="_blank" href="https://dribbble.com/shots/4241950-2thepoint-Ridesharing-App">source</a>
+</div>
+<p class="padding5_top">Contrast rules our perception, not colors. Various usability studies confirmed that the elements that convert best are meeting high contrast standards. Keep this in mind when designing the final design. Are contrasts still powerfull enough to clearly identify user and business goals ?</p>
 <p>We recommend designer to use WCAG 2.0 rules and a tool like Tanaguru to test their contracts. It will also be a good excercise to make sure your design is meeting accessibility requirements. </p>
 
 <h3 class="padding5_top">3) Make Good Use Of Typography</h3>
@@ -129,10 +134,14 @@
 
 <h3 class="padding5_top">4) Leave Room For Blank, Negative Space Or Image</h3>
 <h4>White space balance</h4>
-<p>Miles Davis and Picasso shared a reflection about negative space : they both thought that the most important elements in their creation were silence negative space. A musical melody is built with the spaces between musical notes. If you want your call to action to stand out, keep space around elements, don't give to much to look at.
+<p class="padding5_bottom">Miles Davis and Picasso shared a reflection about negative space : they both thought that the most important elements in their creation were silence negative space. A musical melody is built with the spaces between musical notes. If you want your call to action to stand out, keep space around elements, don't give to much to look at.
 Maintaining a good amount of white space within the blocks of text can make a site more readable and easier to scan. Consider white space as an element as such. People's attention is constantly requested, they will be gratefull if you give them enough room to breath in. Remember contrast? Well, good news : white space is its best ally. Enough white space makes the colors more vivid, brighter and makes elements easier to be catch by the eye of the user. </p>
 
-<p>When done right it is a powerful (and invisible!) element of trust and persuasion, but make good use of it.
+<img src="../../img/blog_hierarchy_whitespace.jpg">
+
+<div class="image_caption"><a class="caption_source" target="_blank" href="https://dribbble.com/shots/4241950-2thepoint-Ridesharing-App">source</a>
+</div>
+<p class="padding5_top">When done right it is a powerful (and invisible!) element of trust and persuasion, but make good use of it.
 This is not always easy to find the correct combination between elements and white spaces : too little white space makes it confusing and having too much space also impact connection between elements and design dynamic negatively. As always it's all about finding the correct balance.</p>
 
 <h4>Image</h4>
@@ -144,7 +153,7 @@ This is not always easy to find the correct combination between elements and whi
 
           <div class="callout">
             <ul class="menu simple">
-              <li><a href="https://robespra.github.io/uxpages/" target="_blank" rel="noopener">Author: Espra-Pages</a></li>
+              <li><a href="https://robespra.github.io/uxpages/" target="_blank" rel="noopener">Author: espra_pages</a></li>
               <!-- <li><a href="#">Comments: 3</a></li> -->
             </ul>
           </div>

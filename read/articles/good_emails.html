@@ -1,6 +1,16 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113130058-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113130058-1');
+</script>
+
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, minimum-scale=1, user-scalable = no">
 <meta name="apple-touch-fullscreen" content="yes">
@@ -36,16 +46,7 @@
 <meta http-equiv="cleartype" content="on">
     <link rel="stylesheet" href="../../css/foundation.css">
     <link rel="stylesheet" href="../../css/app.css">
-    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113130058-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-113130058-1');
-</script>
 
 <script>
         function track(name,label){
@@ -124,8 +125,12 @@
 <li>Footer (use this opportunity to promote referral sharing), </li>
 <li>Legal, </li>
 <li>Support details</li>
-</ul>
-<h4>When designing a transactional, pay special attention to the following items :</h4>
+</ul class="padding10_bottom">
+<img src="../../img/blog_email_marketing.png">
+<div class="image_caption">Marketing email <a class="caption_source" target="_blank" href="https://reallygoodemails.com/promotional/marketing/6-aisles-1-price/">source</a>
+</div>
+
+<h4 class="padding10_top">When designing a transactional email, pay special attention to the following items :</h4>
  <ul> 
   <li>Email Layout (see next point),</li>
   <li> Personalization,</li> 
@@ -135,13 +140,20 @@
 <li>You can also keep space for cross-selling or related-products </li>
 
 </ul>
+<img src="../../img/blog_email_transactional.png">
+<div class="image_caption">Transactional email <a class="caption_source" target="_blank" href="https://reallygoodemails.com/transactional/alert/reset-your-lingo-password/">source</a>
+</div>
+
 
 <h3 class="padding5_top">2) Don’t send all-image emails</h3>
 <p>Some email clients don’t load image and require the user to allow image loading for your email to be displayed. It means that you are actually sending blank email. Consider performance as well. Your user are probably on the move with limited bandwidth and network connection, your email should be displayed immediately when accessing it. When using images in your design remind to compress them. </p>
 
 <h3 class="padding5_top">3) Choose a suitable responsive template</h3>
 <p>Email design coding is hard. You have to adapt and test your design for many different email clients and devices, write HTML using table markup and use well supported basic CSS (don’t forget to use px over ems )… You have two options here : keep it simple if you want your emails to be displayed in wide range of devices or focus mainly on your target audience (e.g. iOS users or wearable and watch users only, why not? 😉). Some useful stats : Gmail has 900m users (75% of which are on mobile), iPhone is 33% of email client market shares followed by iPad at 11% and Android at 10%.</p>
+<img src="../../img/blog_email_template.jpg">
 
+<div class="image_caption"><a class="caption_source" target="_blank" href="https://foundation.zurb.com/emails/email-templates.html">source</a>
+</div>
 <h4>Technical consideration</h4>
 <h5>Single column of media queries ?</h5>
 <p>You can use media queries or create an hybrid template by using a single column (max-width in px and width:100%) and media queries in order to override native characteristics (e.g links, dates and phone numbers as underlined blue text in iOS; Margin (with capital « M ») or clear image height and width for Outlook…) and provide another version for devices supporting mediaqueries. We recommend to use a single column with very limited breakpoints. Keep in mind that there is still a couple of mobile email clients that do not support media queries (iOS Gmail, iOS Inbox, iOS Yahoo, Android Gmail and Windows)</p>
@@ -157,17 +169,27 @@
 <p>Think mobile first : when using images in your design remind to compress them. If designing for retina devices, use svg and prepare @2x images. Don’t forget to set the height and width of the image for Outlook clients.</p>
 
 <h3 class="padding5_top">4) It’s (again!) all about visual hierarchy</h3>
-<p>A great and simple visual hierarchy will help your email convert more. With regards to typography, make it large : we recommend to use 16px font size for text (20 for desktop) and 22 for headings. Try to keep enough white space to make the color of your Call To Action more vivid. CTA buttons should be 44px according to Apple but Google claims that 48px would be better. Play around with heading and text contrasts. Make sure your branding is consistent in your email. Oh and now that we are talking CTA, did you check if your landing page is responsive too ? Be cautious when using navbar. If you do so, make sure that it is a key element in your action hierarchy. If it dilutes the visual weight of your main Call To Action, remove the navbar. PS : make also sure your branding is consistent in your email. </p>
+<img src="../../img/blog_email_hierarchy.jpg">
+<div class="image_caption"><a class="caption_source" target="_blank" href="https://reallygoodemails.com/transactional/tell-us-what-you-think-4/">source</a>
+</div>
+<p class="padding5_top">A great and simple visual hierarchy will help your email convert more. With regards to typography, make it large : we recommend to use 16px font size for text (20 for desktop) and 22 for headings. Try to keep enough white space to make the color of your Call To Action more vivid. CTA buttons should be 44px according to Apple but Google claims that 48px would be better. Play around with heading and text contrasts. Make sure your branding is consistent in your email. Oh and now that we are talking CTA, did you check if your landing page is responsive too ? Be cautious when using navbar. If you do so, make sure that it is a key element in your action hierarchy. If it dilutes the visual weight of your main Call To Action, remove the navbar. PS : make also sure your branding is consistent in your email. </p>
 
 
 
 <h3 class="padding5_top">5) What if despite all this pro tips your user decides to unsubscribe or cancel his account?</h3>
-<p>Do not forget that what we will remind from an experience is its emotional peak and the very end. An unsubscribed user is a user that already knows you and might come back in the future. Try to bring a bit of your brand personality when running the unsubscribe/account cancelation process, don't make it sad and dramatic! If you take this opportunity to make it fun and enjoyable, the user will be more willing to provide the feedback you should be asking on the cancelation page and predisposed to sign up again in the future.</p>
+<img src="../../img/blog_email_cancel.jpg">
+
+<div class="image_caption"><a class="caption_source" target="_blank" href="http://nicelydone.club/products/digital-profile/delete-account/settings-digital-profile/">source</a>
+</div>
+
+
+
+<p class="padding5_top">Do not forget that what we will remind from an experience is its emotional peak and the very end. An unsubscribed user is a user that already knows you and might come back in the future. Try to bring a bit of your brand personality when running the unsubscribe/account cancelation process, don't make it sad and dramatic! If you take this opportunity to make it fun and enjoyable, the user will be more willing to provide the feedback you should be asking on the cancelation page and predisposed to sign up again in the future.</p>
 
 
           <div class="callout">
             <ul class="menu simple">
-              <li><a href="https://robespra.github.io/uxpages/" target="_blank" rel="noopener">Author: Espra-Pages</a></li>
+              <li><a href="https://robespra.github.io/uxpages/" target="_blank" rel="noopener">Author: espra_pages</a></li>
               <!-- <li><a href="#">Comments: 3</a></li> -->
             </ul>
           </div>
