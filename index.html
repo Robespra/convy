@@ -81,8 +81,15 @@ drift.load('c7hbrhuynsy8');
             });
         }
 </script>
-
-
+<script>
+document.querySelector('.button').onmousemove = (e) => {
+  const x = e.pageX - e.target.offsetLeft
+  const y = e.pageY - e.target.offsetTop
+  e.target.style.setProperty('--x', `${ x }px`)
+  e.target.style.setProperty('--y', `${ y }px`)
+ 
+}
+</script>
   </head>
   <body>
 
@@ -195,7 +202,7 @@ function validateContact() {
 <label><span>Content</span></label> 
 </div>
 <div>
-<button name="submit" class="button btn-hero" onClick="sendContact();">Get started</button>
+<button name="submit" class="button btn-hero" onClick="sendContact();"><span>Get started</span></button>
 <div id="mail-status"></div>
 </div>
       </div>
@@ -1066,7 +1073,7 @@ function validateContact() {
 <ul class="pricing-table">
   <li class="title gradient-bg">Quick Wins</li>
   <li class="price">Fixed price 450£</li>
-  <li><a class="button free" href="#convy_contact">Start today</a></li>
+  <li><a class="button free" href="#convy_contact"><span>Start today</span></a></li>
   <li class="description">Get your high-level reports and guides to improve conversion for a specific part of your App or Site</li>
   <li class="description">PET Checklist</li>
   <li class="description">Front-end Checklist</li>
@@ -1074,7 +1081,7 @@ function validateContact() {
   <li class="description">Quick Wins to Reach Your KPIs</li>
   <li class="description">User Testing Guides</li>
   <li class="description">Conversion Checklist</li>
-  <div class="bottom_cta"><a class="button free" href="#convy_contact">Start today</a></div>
+  <div class="bottom_cta"><a class="button free" href="#convy_contact"><span>Start today</span></a></div>
 </ul>
 </div>
 <div class="columns small-11 medium-4">
@@ -1083,7 +1090,7 @@ function validateContact() {
   <li class="price">Starting 480£/day
   
   </li>
-  <li><a class="button specific" href="#convy_contact">Start today</a></li>
+  <li><a class="button specific" href="#convy_contact"><span>Start today</span></a></li>
   <div class="row reduction align-middle">
   <div class="columns small-6"><p class="raye"> was 530£</p></div>
 <div class="columns small-6 saving">save 10%</div>
@@ -1097,14 +1104,14 @@ function validateContact() {
   <li class="description">SWOT Analysis</li>
   <li class="description">UI Benchmark</li>
   <li class="description">a/b Test Setup</li>
-  <div class="bottom_cta"><a class="button specific" href="#convy_contact">Start today</a></div>
+  <div class="bottom_cta"><a class="button specific" href="#convy_contact"><span>Start today</span></a></div>
 </ul>
 </div>
 <div class="columns small-11 medium-4">
 <ul class="pricing-table">
   <li class="title gradient-bg">FULL optimization</li>
   <li class="price">Project setup</li>
-  <li><a class="button multiple" href="#convy_contact">Start today</a></li>
+  <li><a class="button multiple" href="#convy_contact"><span>Start today</span></a></li>
   <li class="description">Includes reports, unlimited funnels optimization plus the following :</li>
   <li class="description">A dedicated account manager will be assigned</li>
   <li class="description">Field Study & User Interview</li>
@@ -1119,7 +1126,7 @@ function validateContact() {
   <li class="description">Inputs from Industry Experts</li>
   <li class="description">Predictive Analysis</li>
   <li class="description">12 Months Iteration</li>
-  <div class="bottom_cta"><a class="button multiple" href="#convy_contact">Start today</a></div>
+  <div class="bottom_cta"><a class="button multiple" href="#convy_contact"><span>Start today</span></a></div>
 </ul>
 </div>
 

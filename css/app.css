@@ -760,7 +760,13 @@ text-align:right;}
     font-size: 1.2rem;
     padding: 1em 2em;
   border-radius: 45px;
-
+position: relative;
+  appearance: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
 }
 
 .button:hover{
@@ -768,6 +774,24 @@ text-align:right;}
   box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 
+.button span {
+    position: relative;
+  }
+.button::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #8c62c8, transparent);
+  transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+.button:hover::before {
+  --size: 400px;
+}
 
 
 
