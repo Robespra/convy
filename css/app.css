@@ -419,18 +419,27 @@ input.login-box-input:invalid ~ input[type="submit"], textarea.login-box-input:i
   background-color: #fefefe;
   border: solid 1px #cacaca;
   width: 100%;
-  text-align: center;
+  text-align: left;
   list-style-type: none;
   min-height: 1000px;
 }
 
+li.checked{
+  background-image: url('../img/check.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 20px; /* Adjust according to image size to push text across. */
+}
+.button-center{
+  text-align: center;
+}
 .chosethatone {
   border: solid 3px #00dde0;
 }
 
 .pricing-table li {
   border-bottom: dotted 1px #cacaca;
-  padding: 0.875rem 1.125rem;
+  padding: 0.875rem 1.225rem;
 }
 
 /* .pricing-table li:last-child {
@@ -473,6 +482,7 @@ text-align:right;}
 .pricing-table .description {
   color: #321c52;
   font-size: 80%;
+  padding: 0.875rem 0.875rem 0.875rem 2.5rem;
 }
 
 .pricing-table :last-child {
